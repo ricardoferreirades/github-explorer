@@ -1,5 +1,11 @@
+import { Repository } from '@typings/Repository';
 import './repository-item.scss';
-export function RepositoryItem({repository}) {
+
+interface RepositoryItemProps {
+    repository: Repository;
+}
+
+export function RepositoryItem({repository} : RepositoryItemProps) {
     return (
         <li>
             <strong>{repository.name}</strong>
