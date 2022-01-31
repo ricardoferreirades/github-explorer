@@ -1,5 +1,5 @@
-import React from "react";
+import { render } from "react-dom";
+import { App } from "./App";
 
-export default function App() {
-    return <h1>Hello, App</h1>
-}
+
+render(<App />, document.querySelector("#root"))
